@@ -1,0 +1,29 @@
+.home {
+    .content {
+        padding-top: 150px;
+        text-align: center;
+        &__top-header{
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(94, 68, 254, 1);
+        }
+        &__header{
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: 700;
+            color: rgba(33, 33, 33, 1);
+        }
+        &__text{
+            margin: 0 auto;
+            margin-top: 50px;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(33, 33, 33, 1);
+            margin-top: 20px;
+            width: 768px;
+        }
+        margin: 0 auto;
+        width: 80%;
+    }
+}

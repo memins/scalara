@@ -1,8 +1,25 @@
 <div class="layout">
     <div class="layout__container">
         <div class="layout__navbar">
-            <div class="layout__navbar-brand">
+            <div class="layout__navbar-brand" (click)="goHome()">
                 <span class="layout__navbar-brand-text"> AUFGABE</span>
+            </div>
+            <div class="layout__navbar-navs">
+                <div class="layout__navbar-nav">
+                    <a class="layout__navbar-nav-link" routerLink="/hypotenuse" routerLinkActive="active">
+                        Calculate hypotenuse
+                    </a>
+                </div>
+                <div class="layout__navbar-nav">
+                    <a class="layout__navbar-nav-link" routerLink="/remainder" routerLinkActive="active">
+                        Output integer remainder
+                    </a>
+                </div>
+                <div class="layout__navbar-nav">
+                    <a class="layout__navbar-nav-link" routerLink="/circumference" routerLinkActive="active">
+                        Calculate circumference
+                    </a>
+                </div>
             </div>
             <div class="layout__navbar-user-avatar">
                 <img class="layout__navbar-user-avatar-image" src="assets/images/user-avatar.png" alt="User Avatar">
