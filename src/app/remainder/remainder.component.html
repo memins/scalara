@@ -1,1 +1,31 @@
-<p>remainder works!</p>
+<div class="view hypotenuse">
+    <app-side-menu [step]="step" [steps]="[
+       'Description',
+       'Input the number',
+         'Input the divisor',
+            'Result',
+   ]" (changeStepEvent)="setStep($event)"></app-side-menu>
+    <div class="content">
+        <app-step [display]="step == 1">
+            <p>
+                Starting with a number, the integer remainder of a division is calculated. ✔
+            </p>
+        </app-step>
+        <app-step [display]="step == 2">
+            <p>
+                Please enter the number:
+            </p>
+            <input type="number" placeholder="number..." [(ngModel)]="mainNumber">
+        </app-step>
+        <app-step [display]="step == 3">
+            <p>
+                Please enter the length of the opposite side:
+            </p>
+            <input type="number" placeholder="divisor..." [(ngModel)]="divisor">
+        </app-step>
+        <app-step [display]="step == 4">
+            Result : {{mainNumber%divisor}}
+        </app-step>
+        <app-next-button [step]="step" [end]="4" (next)="incrementStep()" (reset)="reset()"></app-next-button>
+    </div>
+</div>

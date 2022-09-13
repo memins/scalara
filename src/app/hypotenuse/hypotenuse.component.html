@@ -25,6 +25,6 @@
         <app-step [display]="step == 4">
             Result : {{Math.sqrt(adjacent*adjacent + opposite*opposite)}}
         </app-step>
-        <button class="next-button" (click)="incrementStep()">next</button>
+      <app-next-button [step]="step" [end]="4" (next)="incrementStep()" (reset)="reset()" ></app-next-button>
     </div>
 </div>

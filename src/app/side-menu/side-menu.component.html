@@ -1,7 +1,7 @@
 <div class="side-menu">
     <h1> {{title}} </h1>
     <ul>
-        <li *ngFor="let _step of steps; let index = index" (click)="changeStep(step)" [class]="index+1 === this.step ? 'active':''"> {{_step}}
+        <li *ngFor="let _step of steps; let index = index" (click)="changeStep(index+1)" [class]="index+1 === this.step ? 'active':''"> {{_step}}
         </li>
     </ul>
 </div>

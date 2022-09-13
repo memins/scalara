@@ -28,3 +28,9 @@ span {
     grid-template-columns: 250px auto;
     height: 80vh;
 }
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

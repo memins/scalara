@@ -11,6 +11,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { StepComponent } from './step/step.component';
 import { FormsModule } from '@angular/forms';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ViewComponent } from './view/view.component';
+import { NextButtonComponent } from './next-button/next-button.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     CircumferenceComponent,
     LayoutComponent,
     StepComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    ViewComponent,
+    NextButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ export class SideMenuComponent implements OnInit {
   constructor() { }
 
   changeStep(step: number) {
+    console.log("changeStep", step);
     this.changeStepEvent.emit(step);
   }
 
