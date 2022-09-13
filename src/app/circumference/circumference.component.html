@@ -1,22 +1,22 @@
 <div class="view">
     <app-side-menu [step]="step" [steps]="[
-       'Description',
-       'Input diameter',
-        'Result',
+       'Beschreibung',
+       'Durchmesser eingeben',
+        'Ergebnis',
    ]" (changeStepEvent)="setStep($event)"></app-side-menu>
     <div class="content">
         <app-step [display]="step == 1">
-            <p> The circumference can be calculated using the diameter of a circle. ✔
+            <p> Mit dem Durchmesser eines Kreises kann hier der Umfang berechnet werden. ✔
             </p>
         </app-step>
         <app-step [display]="step == 2">
             <p>
-                Please enter the diameter
+                Bitte geben Sie den Durchmesser ein:
             </p>
-            <input type="number" placeholder="diameter..." [(ngModel)]="diameter">
+            <input type="number" placeholder="Durchmesser..." [(ngModel)]="diameter">
         </app-step>
         <app-step [display]="step == 3">
-            Result : {{Math.PI * diameter}}
+            Ergebnis : {{Math.PI * diameter}}
         </app-step>
         <app-next-button [step]="step" [end]="3" (next)="incrementStep()" (reset)="reset()"></app-next-button>
     </div>

@@ -1,29 +1,29 @@
 <div class="view hypotenuse">
     <app-side-menu [step]="step" [steps]="[
-       'Description',
-       'Input adjacent',
-         'Input opposite',
-            'Calculate',
+       'Beschreibung',
+       'Geben Sie die angrenzende Seitenlänge ein',
+         'Geben Sie die Länge der gegenüberliegenden Seite ein',
+            'Ergebnis',
    ]" (changeStepEvent)="setStep($event)"></app-side-menu>
     <div class="content">
         <app-step [display]="step == 1">
-            <p> Calculate the length of the hypotenuse using the adjacent and opposite sides ✔
+            <p> 
+                Anhand von Ankathete und Gegenkathete die Länge der Hypotenuse berechnen ✔
             </p>
         </app-step>
         <app-step [display]="step == 2">
             <p>
-                Please enter the length of the adjacent side:
+                Bitte geben Sie die Länge der Ankathete-Seite ein:
             </p>
-            <input type="number" placeholder="adjacent" [(ngModel)]="adjacent">
+            <input type="number" placeholder="Ankathete" [(ngModel)]="adjacent">
         </app-step>
         <app-step [display]="step == 3">
             <p>
-                Please enter the length of the opposite side:
-            </p>
-            <input type="number" placeholder="opposite" [(ngModel)]="opposite">
+                Bitte geben Sie die Länge der Gegenkathete-Seite ein:            </p>
+            <input type="number" placeholder="Gegenkathete" [(ngModel)]="opposite">
         </app-step>
         <app-step [display]="step == 4">
-            Result : {{Math.sqrt(adjacent*adjacent + opposite*opposite)}}
+            Ergebnis : {{Math.sqrt(adjacent*adjacent + opposite*opposite)}}
         </app-step>
       <app-next-button [step]="step" [end]="4" (next)="incrementStep()" (reset)="reset()" ></app-next-button>
     </div>
