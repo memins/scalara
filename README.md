@@ -1,27 +1,15 @@
 # Aufgabe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+ - [x]  Figma design was applied 100%.
+ - [x] A separate page was created for each calculation.
+ - [x] Calculation steps are shown on each calculation page.
+ - [x] User can switch between calculation steps
+ - [x] It was prevented from proceeding to the next step before the required information was entered by the user.
+ - [x] User can go back in action steps
+ - [x] A new calculation can be made after the calculation is finished.
+ - [x] A base component has been created for common features in the 3 calculation components. And implemented.
 
-## Development server
+**Run the following commands to run application:**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ - `npm install`
+ - `npm run start`
