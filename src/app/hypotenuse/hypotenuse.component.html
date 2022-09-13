@@ -1,1 +1,19 @@
-<p>hypotenuse works!</p>
+<div class="view hypotenuse">
+    <div class="side-menu">
+        <h1>Hypotenuse</h1>
+    </div>
+    <div class="content">
+        <app-step [step]="1" [display]="step == 1">
+            <p> Calculate the length of the hypotenuse using the adjacent and opposite sides
+                {{step == 1 ? '✔' : ''}}}} {{step}}
+            </p>
+        </app-step>
+        <app-step [step]="2" [display]="step == 2">
+
+        </app-step>
+        <app-step [step]="3" [display]="step == 3">
+
+        </app-step>
+        <button (click)="incrementStep()">next</button>
+    </div>
+</div>

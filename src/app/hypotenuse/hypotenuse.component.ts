@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HypotenuseComponent implements OnInit {
 
-  constructor() { }
+  step = 1;
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+  incrementStep() {
+    this.step++;
   }
 
 }

@@ -8,6 +8,7 @@ import { HypotenuseComponent } from './hypotenuse/hypotenuse.component';
 import { RemainderComponent } from './remainder/remainder.component';
 import { CircumferenceComponent } from './circumference/circumference.component';
 import { LayoutComponent } from './layout/layout.component';
+import { StepComponent } from './step/step.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LayoutComponent } from './layout/layout.component';
     HypotenuseComponent,
     RemainderComponent,
     CircumferenceComponent,
-    LayoutComponent
+    LayoutComponent,
+    StepComponent
   ],
   imports: [
     BrowserModule,
