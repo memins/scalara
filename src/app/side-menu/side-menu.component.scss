@@ -1,0 +1,33 @@
+.side-menu {
+    height: 100%;
+    margin-top: -15px;
+    h1 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Open Sans';
+        padding-left: 16px;
+    }
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+    & ul {
+        padding-left: 0;
+    }
+
+    & li {
+        padding: 8px 0;
+        padding-left: 32px;
+        margin-left: 0;
+        list-style: none;
+        color: rgba(91, 91, 91, 1);
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+
+        &.active {
+            font-weight: 700;
+            background: rgba(244, 246, 247, 1);
+            color: black;
+        }
+    }
+}

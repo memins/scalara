@@ -1,18 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-h1,h2,h3,h4,h5,p,span{
-    font-family: 'Open Sans';
-}
-.view{
-    width: 100%;
-    display:grid;
-    grid-template-columns: 250px auto;
-    height: 80vh;
+html,
+body {
+    height: 100%;
 }
 
-.side-menu{
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    font-family: 'Open Sans';
+}
+
+.view {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 80vh;
 }

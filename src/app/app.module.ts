@@ -9,6 +9,8 @@ import { RemainderComponent } from './remainder/remainder.component';
 import { CircumferenceComponent } from './circumference/circumference.component';
 import { LayoutComponent } from './layout/layout.component';
 import { StepComponent } from './step/step.component';
+import { FormsModule } from '@angular/forms';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { StepComponent } from './step/step.component';
     RemainderComponent,
     CircumferenceComponent,
     LayoutComponent,
-    StepComponent
+    StepComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,30 @@
 <div class="view hypotenuse">
-    <div class="side-menu">
-        <h1>Hypotenuse</h1>
-    </div>
+    <app-side-menu [step]="step" [steps]="[
+       'Description',
+       'Input adjacent',
+         'Input opposite',
+            'Calculate',
+   ]" (changeStepEvent)="setStep($event)"></app-side-menu>
     <div class="content">
-        <app-step [step]="1" [display]="step == 1">
-            <p> Calculate the length of the hypotenuse using the adjacent and opposite sides
-                {{step == 1 ? '✔' : ''}}}} {{step}}
+        <app-step [display]="step == 1">
+            <p> Calculate the length of the hypotenuse using the adjacent and opposite sides ✔
             </p>
         </app-step>
-        <app-step [step]="2" [display]="step == 2">
-
+        <app-step [display]="step == 2">
+            <p>
+                Please enter the length of the adjacent side:
+            </p>
+            <input type="number" placeholder="adjacent" [(ngModel)]="adjacent">
         </app-step>
-        <app-step [step]="3" [display]="step == 3">
-
+        <app-step [display]="step == 3">
+            <p>
+                Please enter the length of the opposite side:
+            </p>
+            <input type="number" placeholder="opposite" [(ngModel)]="opposite">
         </app-step>
-        <button (click)="incrementStep()">next</button>
+        <app-step [display]="step == 4">
+            Result : {{Math.sqrt(adjacent*adjacent + opposite*opposite)}}
+        </app-step>
+        <button class="next-button" (click)="incrementStep()">next</button>
     </div>
 </div>
